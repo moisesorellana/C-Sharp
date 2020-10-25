@@ -7,20 +7,34 @@ public class Alumno
     public string apellido { get; set;}
 
 
+    public bool Activo {get; set;}
+
+
        public Alumno(double ID, string Nombre, string Apellido)
     {
         nombre = Nombre;
         apellido = Apellido;
         id = ID;
-        Activo = true;
     }
 
 
     public string nombrecompleto()
     {
-       return nombre + "" + apellido;
+        if(Activo == true)
+        {
+            return nombre + " " + apellido;
+        }
+       return "Alumno Inactivo";
     }
 
 
-    public void InactivarAlumno()
+    public void inactivarAlumno()
+    {
+        Activo = false;
+    }
+
+     public void activarAlumno()
+    {
+        Activo = true;
+    }
 }
