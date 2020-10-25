@@ -17,4 +17,10 @@ public class Alumno
     {
         id = i;
     }
+
+    public Alumno(string Nombre, string Apellido)
+    {
+        nombre = Nombre;
+        apellido = Apellido;
+    }
 }

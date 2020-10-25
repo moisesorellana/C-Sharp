@@ -20,9 +20,12 @@ namespace propiedades
             b.nombre = "Oscar";
             b.apellido = "Melgar";
 
+            Alumno d = new Alumno("Alfredo", "Castro");
+
             Console.WriteLine(a.id);
             Console.WriteLine(b.id);
             Console.WriteLine(c.id);
+            Console.WriteLine(d.nombre + "" + d.apellido);
         }
     }
 }
